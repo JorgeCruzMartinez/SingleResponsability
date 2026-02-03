@@ -1,1 +1,1 @@
-﻿Console.WriteLine("This app is an example of the SINGLE RESPONSABILITY PRINCIPLE and the original code it's light years away from working in the slightest !!!!!");
+﻿Console.WriteLine("This app is an example of the SINGLE RESPONSABILITY PRINCIPLE and because the original code it's light years away from working in the \n slightest and because of that the \"SingleClass\" had to be excluded from the project to be able to watch this message !!!!!");
