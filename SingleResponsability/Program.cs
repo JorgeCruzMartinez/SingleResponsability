@@ -4,8 +4,8 @@ try
 {
     Console.Write("Please specify the file to convert to HTML: ");
     var fullFilePath = Console.ReadLine();
-    var fileProcessor = new FileProcessor(fullFilePath);
-    var textProcessor = new TextProcessor(fileProcessor);
+    FileProcessor fileProcessor = new FileProcessor(fullFilePath);
+    TextProcessor textProcessor = new TextProcessor(fileProcessor);
     textProcessor.ConvertText();    
 }
 catch (Exception ex)

@@ -4,14 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SingleResponsabilityTests
+namespace SingleResponsabilityTests1
 {
-    public class TextProcessorTests
+    internal class FileProcessorTests
     {
-        [Fact]
-        public void Test1()
-        {
-
-        }
     }
 }

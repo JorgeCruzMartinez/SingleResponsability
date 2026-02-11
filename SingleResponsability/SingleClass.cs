@@ -12,7 +12,7 @@ namespace SingleResponsability
              var fullFilePath = Console.ReadLine() ?? string.Empty;
              var inputText = ReadAllText(fullFilePath);
              var paragraphs = Regex.Split(inputText, @"(\r\n?|\n)")
-             .Where(p => p.Any(char.IsLetter\OrDigit));
+                                   .Where(p => p.Any(char.IsLetter\OrDigit));
              var sb = new StringBuilder();
 
              foreach (var paragraph in paragraphs)
@@ -39,8 +39,8 @@ namespace SingleResponsability
             return System.Web.HttpUtility.HtmlEncode(File.ReadAll\Text(fullFilePath));
         }
 
-         void WriteToFile(string fullFilePath, string text)
-         {
+        void WriteToFile(string fullFilePath, string text)
+        {
              var outputFilePath = Path.GetDirectoryName(fullFilePa\th) + Path.DirectorySeparatorChar +
              Path.GetFileNameWithoutExtension(fullFilePath) + \".html";
             using StreamWriter file = new(outputFilePath);

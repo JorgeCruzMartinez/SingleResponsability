@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Web;
 
 namespace SingleResponsability
 {
@@ -17,12 +13,12 @@ namespace SingleResponsability
 
         public string ReadAllText()
         {
-            return System.Web.HttpUtility.HtmlEncode(File.ReadAllText(fullFilePath));
+            return HttpUtility.HtmlEncode(File.ReadAllText(fullFilePath));
         }
 
         public void WriteToFile(string text)
         {
-            var outputFilePath = Path.GetDirectoryName(fullFilePath) + Path.DirectorySeparatorChar +
+            string outputFilePath = Path.GetDirectoryName(fullFilePath) + Path.DirectorySeparatorChar +
                                  Path.GetFileNameWithoutExtension(fullFilePath) + ".html";
             using StreamWriter file = new(outputFilePath);
             file.Write(text);
